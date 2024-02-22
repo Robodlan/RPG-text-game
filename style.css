@@ -43,12 +43,11 @@ body {
 
 button {
     cursor: pointer;
-    padding: 0.4em;
-    font-size: var(--small);
-    color: var(--blue);
-    background-color: #fff333;
-    border-radius: 10px;
-}
+    color: #0a0a23;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+  }
 
 #monsterStats {
     text-align: center;
