@@ -19,19 +19,19 @@ const monsterHealthText = document.querySelector("#monsterHealth");
 
 const weapons = [
     {
-        name: "stick",
+        name: " stick ",
         power: 5,
     },
     {
-        name: "dagger",
+        name: " dagger ",
         power: 30,
     },
     {
-        name: "claw hammer",
+        name: " claw hammer ",
         power: 50,
     },
     {
-        name: "sword",
+        name: " sword ",
         power: 100,
     }
 ];
@@ -107,7 +107,12 @@ function buyWeapon() {
         gold -= 30;
         currentWeapon++;
         goldText.innerText = gold;
-        text.innerText = "You now have a new weapon."
+        let newWeapon = weapons[currentWeapon].name;
+        text.innerText = `You now have a ${newWeapon}.`
+        inventory.push(newWeapon);
+        text.innerText += ` In your inventory you have: ${inventory} `
+    } else {
+        
     }
 };
 
