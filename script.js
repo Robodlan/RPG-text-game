@@ -109,7 +109,7 @@ function update(location) {
     button1.addEventListener("click", location["button functions"][0]);
     button2.addEventListener("click", location["button functions"][1]);
     button3.addEventListener("click", location["button functions"][2]);
-    text.innerText = location.text;
+    text.innerHTML = location.text;
 };
 
 function goTown() {
@@ -203,6 +203,11 @@ function attack() {
     if (health <= 0) {
         lose()
     } else if (monsterHealth <= 0) {
+        if (fighting === 2) {
+            winGame()
+        } else {
+            defeatMonster();
+        }
         defeatMonster()
     }
 };
