@@ -108,7 +108,7 @@ const locations = [
 // initialize buttons
 
 button1.onclick = goStore;
-button2.addEventListener("click", goCave);
+button2.onclick =  goCave;
 button3.addEventListener("click", fightDragon);
 
 // functions
