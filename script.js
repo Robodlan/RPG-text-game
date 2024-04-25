@@ -120,7 +120,7 @@ function update(location) {
     button3.innerText = location["button text"][2];
     button1.onclick =  location["button functions"][0];
     button2.onclick =  location["button functions"][1];
-    button3.addEventListener("click", location["button functions"][2]);
+    button3.onclick =  location["button functions"][2];
     text.innerHTML = location.text;
 };
 
