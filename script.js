@@ -109,7 +109,7 @@ const locations = [
 
 button1.onclick = goStore;
 button2.onclick =  goCave;
-button3.addEventListener("click", fightDragon);
+button3.onclick =  fightDragon;
 
 // functions
 
